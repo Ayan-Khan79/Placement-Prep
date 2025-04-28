@@ -73,6 +73,8 @@ if the index is not -1 then strat a loop from last to the begin and find where n
 at last reverse the array from the index to the last and return that array
 Time Complexity - O(n) + O(n) + O(n)=> O(n)
 
+_____________________________________________
+
 4 Questions:
 Best Time to Buy and Sell Stock (Leetcode - 121)
 You are given an array prices where prices[i] is the price of a given stock on the ith day.
@@ -94,6 +96,8 @@ Then calculate the max profit that will be the max of current profit and the dif
 minimum will be min(minmum,nums[i]) in every ietration
 Time Complexity - O(n);
 
+_______________________________________________
+
 5 Question:
 Array and String Reversal (GFG)
 Example 1:
@@ -106,3 +110,5 @@ Output: naya
 Approach:-
 Using two pointers on both array and string one at front and one at last and swap both positions until both pointers cross each other
 Time Complexity - O(n)
+
+___________________________________________________
