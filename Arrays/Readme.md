@@ -18,26 +18,24 @@ Time Complexity - O(n + n)=> O(n)
   
   ________________________
 
-2 Question:
-Merge Intervals (Leetcode - 56)
-Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
+2 Question: <br>
+Merge Intervals (Leetcode - 56) <br>
+Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.<br>
 
-Example 1:
-Input: intervals = [[1,3],[2,6],[8,10],[15,18]]
-Output: [[1,6],[8,10],[15,18]]
-Explanation: Since intervals [1,3] and [2,6] overlap, merge them into [1,6].
-Example 2:
-Input: intervals = [[1,4],[4,5]]
-Output: [[1,5]]
-Explanation: Intervals [1,4] and [4,5] are considered overlapping.
+Example 1: <br>
+Input: intervals = [[1,3],[2,6],[8,10],[15,18]]  <br>
+Output: [[1,6],[8,10],[15,18]]  <br>
+Explanation: Since intervals [1,3] and [2,6] overlap, merge them into [1,6].  <br>
+Example 2:  <br>
+Input: intervals = [[1,4],[4,5]]  <br>
+Output: [[1,5]]  <br>
+Explanation: Intervals [1,4] and [4,5] are considered overlapping.  <br>
 
-Approach :-
-Take an answer array of arrays , then take a prev array and set it to the first array of nums and start a loop from 1 to n and inside check if the prev[1]>=temp[0], if so then change the prev[1] to the max of temp[1] and prev[1] and loop will continue 
-Else not then push the prev array to answer and then make the temp array as prev array and then continue 
-At last push the last temp array to answer as it has not been chcecked with any other array
-and return the ans.
-Time Complexity- O(n logn)
-
+Approach :-  <br>
+Take an answer array of arrays , then take a prev array and set it to the first array of nums and start a loop from 1 to n and inside check if the prev[1]>=temp[0], if so then change the prev[1] to the max of temp[1] and prev[1] and loop will continue.  <br>
+Else not then push the prev array to answer and then make the temp array as prev array and then continue  <br>
+At last push the last temp array to answer as it has not been chcecked with any other array and return the ans.  <br>
+Time Complexity- O(n logn)  <br>
 ______________________
 
 3 Question:
