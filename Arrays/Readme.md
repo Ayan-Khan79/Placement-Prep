@@ -112,3 +112,34 @@ Using two pointers on both array and string one at front and one at last and swa
 Time Complexity - O(n)
 
 ___________________________________________________
+
+6 Question:
+Find max and min in an Array
+Example 1:
+Intput: [1,2,3,4,5]
+Output: 5,1
+Example 2:
+Input: [6,7,8,9,4,3]
+Output: 9,3
+
+Approach:-
+Simply traverse the array and compare the each element with answer if the element is greater than answer update it to the answer and do the same for the minimum also and return the answer
+Time Complexity - O(n)
+
+___________________________________________________
+
+7 Question:
+Find Kth Smallest Element in Array
+Example 1:
+Input: [1,2,3,4,5] k=3
+Output: 3
+Input: [5,6,7,8,9] k=4
+Output: 8
+
+Approach :- Simply sort the array and return the (k-1)th index value as answer
+Time Complexity - O(n)
+
+_______________________________________________________
+
+8 Question:
+
