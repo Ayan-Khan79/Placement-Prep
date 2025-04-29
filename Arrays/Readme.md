@@ -142,4 +142,87 @@ Time Complexity - O(n)
 _______________________________________________________
 
 8 Question:
+Sort 0 1 and 2 in array
+Given an array arr[] containing only 0s, 1s, and 2s. Sort the array in ascending order.
+You need to solve this problem without utilizing the built-in sort function.
+Examples:
+Input: arr[] = [0, 1, 2, 0, 1, 2]
+Output: [0, 0, 1, 1, 2, 2]
+Explanation: 0s 1s and 2s are segregated into ascending order.
+Input: arr[] = [0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1]
+Output: [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2]
+Explanation: 0s 1s and 2s are segregated into ascending order.
 
+Approach:-
+1 Brute Force :- Using extra space create a new array of same size and count the number of zer one and two and fill the array.
+Time Complexity -O(n), Space Complexity - O(n)
+2 Two Pointers :- set the firt pointer to set 0 at starting and second pointer j at last to set 2 and make an k pointer as iterator
+If arr[k]==0, swap it with arr[k],arr[i] and i++,k++
+If arr[k]==1 , dont do anything just move forward as one will come automatically in between k++
+If arr[k]==2, Swap it with arr[k],arr[j], then only decrease j-- beacause there is a chance that swapped value can be 0 and we need to check for it
+Now when the k>=j the loop will terminate and our array will be sorted
+Time Complexity - O(n), Space Complexity - O(1)
+
+_________________________________________________
+
+9 Question:
+Move all Negative to starting of Array
+Given an array containing both positive and negative numbers in random order. The task is to rearrange the array elements so that all negative numbers appear before all positive numbers.
+Example 1:
+Input: -12, 11, -13, -5, 6, -7, 5, -3, -6
+Output: -12 -13 -5 -7 -3 -6 11 6 5
+Example 2:
+Input : 1 2 -3 -4 -5 6 7
+Output: -3 -4 -5 1 2 6 7
+
+Approach:-
+1 Brute Force :- Using In built sort function 
+Time Complexity - O(nlogn)
+2 Two Pointer :- using two pointer i and j set i to starting of array that will set negative number and j to last of array that will set positive number and a k iterator that will traverse the array
+Time Complexity - O(n)
+
+____________________________________________________
+
+
+10 Question:
+Union of Arrays with Duplicates
+Given two arrays a[] and b[], the task is to find the number of elements in the union between these two arrays.
+The Union of the two arrays can be defined as the set containing distinct elements from both arrays. If there are repetitions, then only one element occurrence should be there in the union.
+Note: Elements of a[] and b[] are not necessarily distinct.
+Examples:
+Input: a[] = [1, 2, 3, 4, 5], b[] = [1, 2, 3]
+Output: 5
+Explanation: Union set of both the arrays will be 1, 2, 3, 4 and 5. So count is 5.
+Input: a[] = [85, 25, 1, 32, 54, 6], b[] = [85, 2] 
+Output: 7
+Explanation: Union set of both the arrays will be 85, 25, 1, 32, 54, 6, and 2. So count is 7.
+
+Approach:-
+1 using sorting :- Sort both arrays and start fill the new array with both elements skipping the duplicate one
+Time Complexity - O(nlogn) + O(mlogm) , Space Complexity - O(n+m)
+2 Using Unordered Set :- We know that set contains only unique elements if we inser elements of both the arrays it will atumatically insert unique ones.
+Time Complexity - O(n+m) as insertion takes O(1) in unordered set , Space Complexity - O(n+m);
+
+___________________________________________________________
+
+
+11 Question:
+Rotate Array by One
+Given an array arr, rotate the array by one position in clockwise direction.
+Examples:
+Input: arr[] = [1, 2, 3, 4, 5]
+Output: [5, 1, 2, 3, 4]
+Explanation: If we rotate arr by one position in clockwise 5 come to the front and remaining those are shifted to the end.
+Input: arr[] = [9, 8, 7, 6, 4, 2, 1, 3]
+Output: [3, 9, 8, 7, 6, 4, 2, 1]
+Explanation: After rotating clock-wise 3 comes in first position.
+
+Approach:-
+First reverse the array from kth position to last position , then reverse array from starting to k-1 position, and then again reverse array array from starting to the end
+You will get your rotated array by k steps , here k=1 so no other need to reverse kth to last just reverse start to k-1 position and then reverse start to last
+Time Complexity - O(n-k) +O(k)=> O(n)
+
+_______________________________________________________________
+
+
+12 Question
