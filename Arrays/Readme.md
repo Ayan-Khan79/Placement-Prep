@@ -1,23 +1,22 @@
-1 Question:
-Find duplicate in an Array(leetcode -287)
-Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n] inclusive.
-There is only one repeated number in nums, return this repeated number.
-You must solve the problem without modifying the array nums and using only constant extra space.
-Example 1:
-
-Input: nums = [1,3,4,2,2]
-Output: 2
-Example 2:
-Input: nums = [3,1,3,4,2]
-Output: 3
-Example 3:
-Input: nums = [3,3,3,3,3]
-Output: 3
-
-Approach :-
-As we got approach to detect cycle in the linked lits, in the same manner we will apply the concept here and find the starting of the loop and that will be our answer.
-Time Complexity - O(n + n)=> O(n)
-________________________
+1 Question:  
+Find duplicate in an Array(leetcode -287)  
+Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n] inclusive.  
+There is only one repeated number in nums, return this repeated number.  
+You must solve the problem without modifying the array nums and using only constant extra space.  
+Example 1:  
+Input: nums = [1,3,4,2,2]  
+Output: 2  
+Example 2:  
+Input: nums = [3,1,3,4,2]  
+Output: 3  
+Example 3:  
+Input: nums = [3,3,3,3,3]  
+Output: 3  
+Approach :-  
+As we got approach to detect cycle in the linked lits, in the same manner we will apply the concept here and find the starting of the loop and that will be our answer.  
+Time Complexity - O(n + n)=> O(n)  
+  
+  ________________________
 
 2 Question:
 Merge Intervals (Leetcode - 56)
@@ -226,3 +225,17 @@ _______________________________________________________________
 
 
 12 Question
+Kadane Algorithm
+Given an integer array arr[]. You need to find the maximum sum of a subarray.
+Examples:
+Input: arr[] = [2, 3, -8, 7, -1, 2, 3]
+Output: 11
+Explanation: The subarray {7, -1, 2, 3} has the largest sum 11.
+Input: arr[] = [-2, -4]
+Output: -2
+Explanation: The subarray {-2} has the largest sum -2.
+Input: arr[] = [5, 4, 1, 7, 8]
+Output: 25
+Explanation: The subarray {5, 4, 1, 7, 8} has the largest sum 25.
+
+Approach:-
