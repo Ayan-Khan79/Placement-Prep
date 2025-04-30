@@ -244,4 +244,30 @@ Time Complexity - O(n)
 _______________________________________________________________________  
 
 13 Question  
+Given an array arr[] denoting heights of N towers and a positive integer K. <br>
+For each tower, you must perform exactly one of the following operations exactly once. <br>
+Increase the height of the tower by K <br>
+Decrease the height of the tower by K <br>
+Find out the minimum possible difference between the height of the shortest and tallest towers after you have modified each tower. <br>
+You can find a slight modification of the problem here. <br>
+Note: It is compulsory to increase or decrease the height by K for each tower. After the operation, the resultant array should not contain any negative integers. <br>
+Examples : <br>
+Input: k = 2, arr[] = {1, 5, 8, 10} <br>
+Output: 5 <br>
+Explanation: The array can be modified as {1+k, 5-k, 8-k, 10-k} = {3, 3, 6, 8}.The difference between the largest and the smallest is 8-3 = 5. <br>
+Input: k = 3, arr[] = {3, 9, 12, 16, 20} <br>
+Output: 11 <br>
+Explanation: The array can be modified as {3+k, 9+k, 12-k, 16-k, 20-k} -> {6, 12, 9, 13, 17}.The difference between the largest and the smallest is 17-6 = 11.  <br>  
+Approach:-  
+First sort the array and then final the initial diffrence that is arr[n-1]-arr[0], then set max and min and start a loop from 1 to n  
+then find max of tower by finding max of last tower-k with the ith tower +k  
+then find the min of tower in same loop by min of first tower +k with ith tower-k  
+and if arr[i] <k continue  
+Time complexity - O(n)  
+Space complexity - O(1)  
+
+_________________________________________________________________________________  
+
+14 Question  
+
 
