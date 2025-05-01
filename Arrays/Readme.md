@@ -269,5 +269,32 @@ Space complexity - O(1)
 _________________________________________________________________________________  
 
 14 Question  
+Given two sorted arrays a[] and b[] of size n and m respectively, the task is to merge them in sorted order without using any extra space. Modify a[] so that it contains the first n <br> elements and modify b[] so that it contains the last m elements. <br>
+Examples: <br>
+Input: a[] = [2, 4, 7, 10], b[] = [2, 3] <br>
+Output: <br>
+2 2 3 4 <br>
+7 10 <br>
+Explanation: After merging the two non-decreasing arrays, we get, 2 2 3 4 7 10 <br>
+Input: a[] = [1, 5, 9, 10, 15, 20], b[] = [2, 3, 8, 13] <br>
+Output: <br>
+1 2 3 5 8 9 <br>
+10 13 15 20 <br>
+Explanation: After merging two sorted arrays we get 1 2 3 5 8 9 10 13 15 20. <br>
+Input: a[] = [0, 1], b[] = [2, 3] <br>
+Output: <br>
+0 1 <br>
+2 3 <br> 
+Explanation: After merging two sorted arrays we get 0 1 2 3. <br>
+Approach:-  
+Using two pointer approach , set the first pointer at the last of array and second pointer to the first of array  
+Now since the both arrays are sorted then swap the elements of both arrays till we reach the element in first array that is smaller than second array  
+That means we have all the elements in array1 smaller than in array two  
+Simply sort the both array and return  
+Time complexity - O(nlog) + O(mlogm) + O(n) => O(n+m)log(m+n)  
+
+_____________________________________________________________________________________
+
+15 Question  
 
 
