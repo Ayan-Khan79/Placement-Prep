@@ -21,5 +21,7 @@ int main(){
     cin>>st;
     string ans = reverseString(st);
     cout<<ans<<endl;
+
+    
     return 0;
 }
