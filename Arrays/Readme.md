@@ -286,15 +286,40 @@ Output: <br>
 0 1 <br>
 2 3 <br> 
 Explanation: After merging two sorted arrays we get 0 1 2 3. <br>
-Approach:-  
-Using two pointer approach , set the first pointer at the last of array and second pointer to the first of array  
-Now since the both arrays are sorted then swap the elements of both arrays till we reach the element in first array that is smaller than second array  
-That means we have all the elements in array1 smaller than in array two  
-Simply sort the both array and return  
-Time complexity - O(nlog) + O(mlogm) + O(n) => O(n+m)log(m+n)  
+Approach:-   <br>
+Using two pointer approach , set the first pointer at the last of array and second pointer to the first of array  <br>
+Now since the both arrays are sorted then swap the elements of both arrays till we reach the element in first array that is smaller than second array  <br>
+That means we have all the elements in array1 smaller than in array two  <br>
+Simply sort the both array and return  <br>
+Time complexity - O(nlog) + O(mlogm) + O(n) => O(n+m)log(m+n)  <br>
 
 _____________________________________________________________________________________
 
-15 Question  
+15 Question  <br>
+Common in 3 Sorted Arrays <br>
+Given three sorted arrays in non-decreasing order, print all common elements in non-decreasing order across these arrays. If there are no such elements return an empty array. In this case, the output will be -1. <br>
+Examples : <br>
+Input: arr1 = [1, 5, 10, 20, 40, 80] , arr2 = [6, 7, 20, 80, 100] , arr3 = [3, 4, 15, 20, 30, 70, 80, 120] <br>
+Output: [20, 80] <br>
+Explanation: 20 and 80 are the only common elements in arr, brr and crr. <br>
+Approach:- <br>
+1. Using three pointers i j and k for the three arrays <br>
+Start the pointer from starting of each array and first check if element in 1 is equal to element in 2 and also equal to element to 3, then <br>
+insert it to the set ,because it will handle the dupliacates value <br>
+If not then check if first element is less than second then increase the first pointer as arrays are sorted <br>
+if not also then check if second element is less than third element then increase the second pointer <br>
+If not also then increase the third pointer <br>
+Lastly fill the vector with values in set and return and if set is empty return -1 in vector. <br>
+Time Complexity - O(n1+n2+n3 + m), m for inserting in set and iterating to fetch value <br>
+Space Complexity - O(m), m are element in set <br>
+2. Using Binary Search in two arrays for each and every value in  value in first array <br>
+If both the elements are found in the two arrays then insert the elemnet in set  <br>
+If not then keep on moving <br>
+At last return the  vectors with elements in set <br>
+Time Complexity-O(n1(n2logn2+n3logn3) + m) <br>
+Space Complexity - O(m), m are elements in set <br>
 
+_____________________________________________________________________________________
+
+16 Question
 
