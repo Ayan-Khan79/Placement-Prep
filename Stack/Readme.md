@@ -13,18 +13,23 @@ Space Complexity - O(n), n is the length of string to put in stack <br>
 
 ______________________________________________________________
 
-Question 2
-Reverse a Stack
-You are given a stack St. You have to reverse the stack using recursion.
-Example 1:
-Input:
-St = {3,2,1,7,6}
-Output:
-{6,7,1,2,3}
-Explanation:
-Input stack after reversing will look like the stack in the output.
-Approach:-
-Using recursion and backtracking in the main function keep popping the value until it  empties by popping a value storing it and calling function and then after main function call
-Call the inserAtbottom function to insert every value at bottom of stack so it reverses every time.
-Time Complexity - O(n^2), beacuse for every number you have to call insert at bottom functioin which itself takes the O(n) time to insert value
-Space Complexity - O(n), for the stack
+Question 2 <br>
+Reverse a Stack <br>
+You are given a stack St. You have to reverse the stack using recursion. <br>
+Example 1: <br>
+Input: <br> 
+St = {3,2,1,7,6} <br>
+Output: <br>
+{6,7,1,2,3} <br>
+Explanation: <br>
+Input stack after reversing will look like the stack in the output. <br>
+Approach:- <br>
+Using recursion and backtracking in the main function keep popping the value until it  empties by popping a value storing it and calling function and then after main function call <br>
+Call the inserAtbottom function to insert every value at bottom of stack so it reverses every time. <br>
+Time Complexity - O(n^2), beacuse for every number you have to call insert at bottom functioin which itself takes the O(n) time to insert value <br> 
+Space Complexity - O(n), for the stack <br>
+
+_____________________________________________________________________
+
+Question 3 <br>
+
