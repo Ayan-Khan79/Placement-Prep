@@ -322,7 +322,7 @@ Space Complexity - O(m), m are elements in set <br>
 _____________________________________________________________________________________
 
 ## Question 16
-Alternate Positive Negative
+# Alternate Positive Negative
 Given an unsorted array arr containing both positive and negative numbers. Your task is to rearrange the array and convert it into an array of alternate positive and negative numbers without changing the relative order.
 Note:
 - Resulting array should start with a positive integer (0 will also be considered as a positive integer).
