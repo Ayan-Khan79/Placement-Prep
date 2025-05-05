@@ -1,4 +1,4 @@
-1 Question:  
+## Question 1:  
 Find duplicate in an Array(leetcode -287)  
 Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n] inclusive.  
 There is only one repeated number in nums, return this repeated number.  
@@ -18,7 +18,7 @@ Time Complexity - O(n + n)=> O(n)
   
   ________________________
 
-2 Question: <br>
+## Question 2: <br>
 Merge Intervals (Leetcode - 56) <br>
 Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.<br>
 
@@ -38,7 +38,7 @@ At last push the last temp array to answer as it has not been chcecked with any 
 Time Complexity- O(n logn)  <br>
 ______________________
 
-3 Question:  <br>
+## Question 3:  <br>
 Next Permutation (Leetcode - 31)  <br>
 A permutation of an array of integers is an arrangement of its members into a sequence or linear order.  <br>
 
@@ -72,7 +72,7 @@ Time Complexity - O(n) + O(n) + O(n)=> O(n) <br>
 
 _____________________________________________
 
-4 Questions: <br>
+## Question 4: <br>
 Best Time to Buy and Sell Stock (Leetcode - 121) <br>
 You are given an array prices where prices[i] is the price of a given stock on the ith day. <br>
 You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock. <br>
@@ -95,7 +95,7 @@ Time Complexity - O(n) <br>
 
 _______________________________________________
 
-5 Question: <br>
+## Question 5: <br>
 Array and String Reversal (GFG) <br>
 Example 1: <br>
 Input : [1,2,3,4,5] <br>
@@ -110,7 +110,7 @@ Time Complexity - O(n) <br>
 
 ___________________________________________________
 
-6 Question: <br>
+## Question 6: <br>
 Find max and min in an Array <br>
 Example 1: <br>
 Intput: [1,2,3,4,5] <br>
@@ -125,7 +125,7 @@ Time Complexity - O(n) <br>
 
 ___________________________________________________
 
-7 Question: <br>
+## Question 7: <br>
 Find Kth Smallest Element in Array <br>
 Example 1: <br>
 Input: [1,2,3,4,5] k=3 <br>
@@ -138,7 +138,7 @@ Time Complexity - O(n) <br>
 
 _______________________________________________________
 
-8 Question: <br>
+## Question 8: <br>
 Sort 0 1 and 2 in array <br>
 Given an array arr[] containing only 0s, 1s, and 2s. Sort the array in ascending order. <br>
 You need to solve this problem without utilizing the built-in sort function. <br>
@@ -162,7 +162,7 @@ Time Complexity - O(n), Space Complexity - O(1) <br>
 
 _________________________________________________
 
-9 Question: <br>
+## Question 9: <br>
 Move all Negative to starting of Array <br>
 Given an array containing both positive and negative numbers in random order. The task is to rearrange the array elements so that all negative numbers appear before all positive numbers. <br>
 Example 1: <br>
@@ -181,7 +181,7 @@ Time Complexity - O(n) <br>
 ____________________________________________________
 
 
-10 Question: <br>
+## Question 10: <br>
 Union of Arrays with Duplicates <br>
 Given two arrays a[] and b[], the task is to find the number of elements in the union between these two arrays. <br>
 The Union of the two arrays can be defined as the set containing distinct elements from both arrays. If there are repetitions, then only one element occurrence should be there in the union. <br>
@@ -203,7 +203,7 @@ Time Complexity - O(n+m) as insertion takes O(1) in unordered set , Space Comple
 ___________________________________________________________
 
 
-11 Question: <br>
+## Question 11: <br>
 Rotate Array by One <br>
 Given an array arr, rotate the array by one position in clockwise direction. <br>
 Examples: <br>
@@ -222,7 +222,7 @@ Time Complexity - O(n-k) +O(k)=> O(n) <br>
 _______________________________________________________________
 
 
-12 Question <br>
+## Question 12 <br>
 Kadane Algorithm <br>
 Given an integer array arr[]. You need to find the maximum sum of a subarray. <br>
 Examples: <br>
@@ -243,7 +243,7 @@ Time Complexity - O(n)
 
 _______________________________________________________________________  
 
-13 Question  
+## Question 13 <br> 
 Given an array arr[] denoting heights of N towers and a positive integer K. <br>
 For each tower, you must perform exactly one of the following operations exactly once. <br>
 Increase the height of the tower by K <br>
@@ -268,7 +268,7 @@ Space complexity - O(1)
 
 _________________________________________________________________________________  
 
-14 Question  
+## Question 14 <br>
 Given two sorted arrays a[] and b[] of size n and m respectively, the task is to merge them in sorted order without using any extra space. Modify a[] so that it contains the first n <br> elements and modify b[] so that it contains the last m elements. <br>
 Examples: <br>
 Input: a[] = [2, 4, 7, 10], b[] = [2, 3] <br>
@@ -295,7 +295,7 @@ Time complexity - O(nlog) + O(mlogm) + O(n) => O(n+m)log(m+n)  <br>
 
 _____________________________________________________________________________________
 
-15 Question  <br>
+## Question 15  <br>
 Common in 3 Sorted Arrays <br>
 Given three sorted arrays in non-decreasing order, print all common elements in non-decreasing order across these arrays. If there are no such elements return an empty array. In this case, the output will be -1. <br>
 Examples : <br>
@@ -321,5 +321,28 @@ Space Complexity - O(m), m are elements in set <br>
 
 _____________________________________________________________________________________
 
-16 Question
+## Question 16
+Alternate Positive Negative
+Given an unsorted array arr containing both positive and negative numbers. Your task is to rearrange the array and convert it into an array of alternate positive and negative numbers without changing the relative order.
+Note:
+- Resulting array should start with a positive integer (0 will also be considered as a positive integer).
+- If any of the positive or negative integers are exhausted, then add the remaining integers in the answer as it is by maintaining the relative order.
+- The array may or may not have the equal number of positive and negative integers.
+Examples:
+Input: arr[] = [9, 4, -2, -1, 5, 0, -5, -3, 2]
+Output: [9, -2, 4, -1, 5, -5, 0, -3, 2]
+Explanation: The positive numbers are [9, 4, 5, 0, 2] and the negative integers are [-2, -1, -5, -3]. Since, we need to start with the positive integer first and then negative integer and so on (by maintaining the relative order as well), hence we will take 9 from the positive set of elements and then -2 after that 4 and then -1 and so on.
+Approach:-
+create two arrays positive and negative , Iterate overe the original array and store the positive num in pos array and negative num in neg array
+Now take three pointer i j k for pos array neg array and original array
+start a while loop till any one of the pointer reaches last of its array
+and fill original array accordin to the index , if index is even positive number else negative number
+Now to fill remaining number from either of the arrays write two while loops for both neg and pos array
+Time Complexity - O(n)
+Space Complexity-O(k+j) => O(n)
+
+_____________________________________________________________________________________________
+
+## Question 17
+
 
