@@ -321,25 +321,25 @@ Space Complexity - O(m), m are elements in set <br>
 
 _____________________________________________________________________________________
 
-## Question 16
-# Alternate Positive Negative
-Given an unsorted array arr containing both positive and negative numbers. Your task is to rearrange the array and convert it into an array of alternate positive and negative numbers without changing the relative order.
-Note:
-- Resulting array should start with a positive integer (0 will also be considered as a positive integer).
-- If any of the positive or negative integers are exhausted, then add the remaining integers in the answer as it is by maintaining the relative order.
-- The array may or may not have the equal number of positive and negative integers.
-Examples:
-Input: arr[] = [9, 4, -2, -1, 5, 0, -5, -3, 2]
-Output: [9, -2, 4, -1, 5, -5, 0, -3, 2]
-Explanation: The positive numbers are [9, 4, 5, 0, 2] and the negative integers are [-2, -1, -5, -3]. Since, we need to start with the positive integer first and then negative integer and so on (by maintaining the relative order as well), hence we will take 9 from the positive set of elements and then -2 after that 4 and then -1 and so on.
-Approach:-
-create two arrays positive and negative , Iterate overe the original array and store the positive num in pos array and negative num in neg array
-Now take three pointer i j k for pos array neg array and original array
-start a while loop till any one of the pointer reaches last of its array
-and fill original array accordin to the index , if index is even positive number else negative number
-Now to fill remaining number from either of the arrays write two while loops for both neg and pos array
-Time Complexity - O(n)
-Space Complexity-O(k+j) => O(n)
+## Question 16 <br>
+### Alternate Positive Negative <br>
+Given an unsorted array arr containing both positive and negative numbers. Your task is to rearrange the array and convert it into an array of alternate positive and negative numbers without changing the relative order. <br>
+Note: <br>
+- Resulting array should start with a positive integer (0 will also be considered as a positive integer). <br>
+- If any of the positive or negative integers are exhausted, then add the remaining integers in the answer as it is by maintaining the relative order. <br>
+- The array may or may not have the equal number of positive and negative integers. <br>
+Examples: <br>
+Input: arr[] = [9, 4, -2, -1, 5, 0, -5, -3, 2] <br>
+Output: [9, -2, 4, -1, 5, -5, 0, -3, 2] <br>
+Explanation: The positive numbers are [9, 4, 5, 0, 2] and the negative integers are [-2, -1, -5, -3]. Since, we need to start with the positive integer first and then negative integer and so on (by maintaining the relative order as well), hence we will take 9 from the positive set of elements and then -2 after that 4 and then -1 and so on. <br>
+Approach:- <br>
+create two arrays positive and negative , Iterate overe the original array and store the positive num in pos array and negative num in neg array <br>
+Now take three pointer i j k for pos array neg array and original array <br>
+start a while loop till any one of the pointer reaches last of its array <br>
+and fill original array accordin to the index , if index is even positive number else negative number <br>
+Now to fill remaining number from either of the arrays write two while loops for both neg and pos array <br>
+Time Complexity - O(n) <br>
+Space Complexity-O(k+j) => O(n) <br>
 
 _____________________________________________________________________________________________
 
