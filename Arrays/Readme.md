@@ -1,5 +1,5 @@
 ## Question 1:  
-Find duplicate in an Array(leetcode -287)  
+### Find duplicate in an Array(leetcode -287)  
 Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n] inclusive.  
 There is only one repeated number in nums, return this repeated number.  
 You must solve the problem without modifying the array nums and using only constant extra space.  
@@ -19,7 +19,7 @@ Time Complexity - O(n + n)=> O(n)
   ________________________
 
 ## Question 2: <br>
-Merge Intervals (Leetcode - 56) <br>
+### Merge Intervals (Leetcode - 56) <br>
 Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.<br>
 
 Example 1: <br>
@@ -39,7 +39,7 @@ Time Complexity- O(n logn)  <br>
 ______________________
 
 ## Question 3:  <br>
-Next Permutation (Leetcode - 31)  <br>
+### Next Permutation (Leetcode - 31)  <br>
 A permutation of an array of integers is an arrangement of its members into a sequence or linear order.  <br>
 
 For example, for arr = [1,2,3], the following are all the permutations of arr: [1,2,3], [1,3,2], [2, 1, 3], [2, 3, 1], [3,1,2], [3,2,1].  <br>
@@ -73,7 +73,7 @@ Time Complexity - O(n) + O(n) + O(n)=> O(n) <br>
 _____________________________________________
 
 ## Question 4: <br>
-Best Time to Buy and Sell Stock (Leetcode - 121) <br>
+### Best Time to Buy and Sell Stock (Leetcode - 121) <br>
 You are given an array prices where prices[i] is the price of a given stock on the ith day. <br>
 You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock. <br>
 Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0. <br>
@@ -96,7 +96,7 @@ Time Complexity - O(n) <br>
 _______________________________________________
 
 ## Question 5: <br>
-Array and String Reversal (GFG) <br>
+### Array and String Reversal (GFG) <br>
 Example 1: <br>
 Input : [1,2,3,4,5] <br>
 Output: [5,4,3,2,1] <br>
@@ -111,7 +111,7 @@ Time Complexity - O(n) <br>
 ___________________________________________________
 
 ## Question 6: <br>
-Find max and min in an Array <br>
+### Find max and min in an Array <br>
 Example 1: <br>
 Intput: [1,2,3,4,5] <br>
 Output: 5,1 <br> 
@@ -126,7 +126,7 @@ Time Complexity - O(n) <br>
 ___________________________________________________
 
 ## Question 7: <br>
-Find Kth Smallest Element in Array <br>
+### Find Kth Smallest Element in Array <br>
 Example 1: <br>
 Input: [1,2,3,4,5] k=3 <br>
 Output: 3 <br>
@@ -139,7 +139,7 @@ Time Complexity - O(n) <br>
 _______________________________________________________
 
 ## Question 8: <br>
-Sort 0 1 and 2 in array <br>
+### Sort 0 1 and 2 in array <br>
 Given an array arr[] containing only 0s, 1s, and 2s. Sort the array in ascending order. <br>
 You need to solve this problem without utilizing the built-in sort function. <br>
 Examples: <br>
@@ -163,7 +163,7 @@ Time Complexity - O(n), Space Complexity - O(1) <br>
 _________________________________________________
 
 ## Question 9: <br>
-Move all Negative to starting of Array <br>
+### Move all Negative to starting of Array <br>
 Given an array containing both positive and negative numbers in random order. The task is to rearrange the array elements so that all negative numbers appear before all positive numbers. <br>
 Example 1: <br>
 Input: -12, 11, -13, -5, 6, -7, 5, -3, -6 <br>
@@ -182,7 +182,7 @@ ____________________________________________________
 
 
 ## Question 10: <br>
-Union of Arrays with Duplicates <br>
+### Union of Arrays with Duplicates <br>
 Given two arrays a[] and b[], the task is to find the number of elements in the union between these two arrays. <br>
 The Union of the two arrays can be defined as the set containing distinct elements from both arrays. If there are repetitions, then only one element occurrence should be there in the union. <br>
 Note: Elements of a[] and b[] are not necessarily distinct. <br>
@@ -204,7 +204,7 @@ ___________________________________________________________
 
 
 ## Question 11: <br>
-Rotate Array by One <br>
+### Rotate Array by One <br>
 Given an array arr, rotate the array by one position in clockwise direction. <br>
 Examples: <br>
 Input: arr[] = [1, 2, 3, 4, 5] <br>
@@ -223,7 +223,7 @@ _______________________________________________________________
 
 
 ## Question 12 <br>
-Kadane Algorithm <br>
+### Kadane Algorithm <br>
 Given an integer array arr[]. You need to find the maximum sum of a subarray. <br>
 Examples: <br>
 Input: arr[] = [2, 3, -8, 7, -1, 2, 3] <br>
@@ -244,6 +244,7 @@ Time Complexity - O(n)
 _______________________________________________________________________  
 
 ## Question 13 <br> 
+### Minimize the Heights <br>
 Given an array arr[] denoting heights of N towers and a positive integer K. <br>
 For each tower, you must perform exactly one of the following operations exactly once. <br>
 Increase the height of the tower by K <br>
@@ -269,6 +270,7 @@ Space complexity - O(1)
 _________________________________________________________________________________  
 
 ## Question 14 <br>
+### Merge without Extra Space <br>
 Given two sorted arrays a[] and b[] of size n and m respectively, the task is to merge them in sorted order without using any extra space. Modify a[] so that it contains the first n <br> elements and modify b[] so that it contains the last m elements. <br>
 Examples: <br>
 Input: a[] = [2, 4, 7, 10], b[] = [2, 3] <br>
@@ -296,7 +298,7 @@ Time complexity - O(nlog) + O(mlogm) + O(n) => O(n+m)log(m+n)  <br>
 _____________________________________________________________________________________
 
 ## Question 15  <br>
-Common in 3 Sorted Arrays <br>
+### Common in 3 Sorted Arrays <br>
 Given three sorted arrays in non-decreasing order, print all common elements in non-decreasing order across these arrays. If there are no such elements return an empty array. In this case, the output will be -1. <br>
 Examples : <br>
 Input: arr1 = [1, 5, 10, 20, 40, 80] , arr2 = [6, 7, 20, 80, 100] , arr3 = [3, 4, 15, 20, 30, 70, 80, 120] <br>
