@@ -345,6 +345,26 @@ Space Complexity-O(k+j) => O(n) <br>
 
 _____________________________________________________________________________________________
 
-## Question 17
+## Question 17 <br>
+### Median of an Array <br>
+Given an array arr[] of integers, calculate the median. <br>
+Examples: <br>
+Input: arr[] = [90, 100, 78, 89, 67] <br>
+Output: 89 <br>
+Explanation: After sorting the array middle element is the median  <br>
+Input: arr[] = [56, 67, 30, 79] <br>
+Output: 61.5 <br>
+Explanation: In case of even number of elements, average of two middle elements is the median.  <br>
+Approach:- <br>
+First sort the array and then find the number of elements in array <br>
+if its even then apply formula of even to find median that is (n/2th term + n/2-1th term)/2 <br>
+If its odd then apply formula of odd to find median that is n/2th term <br>
+Time Complexity - O(nlogn) for sorting <br>
+Space Complexity - O(1) <br>
+
+________________________________________________________________________________________________
+
+## Question 18 <br>
+
 
 
