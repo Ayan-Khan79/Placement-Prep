@@ -46,3 +46,30 @@ Time Complexity-O(n*m) <br>
 Time Complexity-O(1) <br>
 
 __________________________________________________________________________________________
+
+
+## Question 4  <br>
+### Sort the Matrix  <br>
+Given an NxN matrix Mat. Sort all elements of the matrix.  <br>
+Example 1:  <br>
+Input:  <br>
+N=4   <br>
+Mat=[[10,20,30,40], <br>
+[15,25,35,45]  <br>
+[27,29,37,48]  <br>
+[32,33,39,50]] <br>
+Output: <br>
+10 15 20 25  <br>
+27 29 30 32 <br>
+33 35 37 39 <br>
+40 45 48 50 <br>
+Explanation: <br>
+Sorting the matrix gives this result. <br>
+Approach:- <br>
+Take an empty vector temp of 1d of size n*m and fill it with all the elements of array and sort it using stl <br>
+Then make another 2d vector ans of same size as original array and start filling it from the starting of the temp array till its last <br>
+Time Complexity-O(n^2logn) <br>
+Space Complexity-O(n^2) <br>
+
+__________________________________________________________________________________________________
+
