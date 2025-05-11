@@ -73,3 +73,20 @@ Space Complexity-O(n^2) <br>
 
 __________________________________________________________________________________________________
 
+
+## Question 5 <br>
+### Spirally traversing a matrix <br>
+You are given a rectangular matrix mat[][] of size n x m, and your task is to return an array while traversing the matrix in spiral form. <br>
+Examples: <br>
+Input: mat[][] = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]] <br>
+Output: [1, 2, 3, 4, 8, 12, 16, 15, 14, 13, 9, 5, 6, 7, 11, 10] <br>
+Approach:- <br>
+Take a count as 0 and finalCount m*n as total number of elements in matrix <br>
+Now start a while loop till count reaches  1 less than finalCount <br>
+now take four pointers as startrow endrow startcol and endcol and with the help of them traverse firstRow lastCol lastRow and firstCol one by one in the while loop and keep printing each element and keep increasing count and also keep updating pointers once you are done with printing that row or column <br>
+Time Complexity-O(n*m) <br>
+Space Complexity-O(n+m) <br>
+
+_____________________________________________________________________________________________________
+
+
