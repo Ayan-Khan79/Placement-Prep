@@ -365,6 +365,23 @@ Space Complexity - O(1) <br>
 ________________________________________________________________________________________________
 
 ## Question 18 <br>
+### Two Sum II - Input Array Is Sorted <br>
+Given a 1-indexed array of integers numbers that is already sorted in non-decreasing order, find two numbers such that they add up to a specific target number. Let these two numbers be numbers[index1] and numbers[index2] where 1 <= index1 < index2 <= numbers.length. <br>
+Return the indices of the two numbers, index1 and index2, added by one as an integer array [index1, index2] of length 2. <br>
+The tests are generated such that there is exactly one solution. You may not use the same element twice. <br>
+Input: numbers = [2,7,11,15], target = 9 <br>
+Output: [1,2] <br>
+Explanation: The sum of 2 and 7 is 9. Therefore, index1 = 1, index2 = 2. We return [1, 2]. <br>
+Approach:- <br>
+Simply Follow two pointers approach, as the arry is sorted one pointer place at starting and second at the end <br>
+Now Calculate sum and if its equal to target then push i+1 and j+1 as we have to return 1 based indexing <br>
+And to avoid multiple answers use set to insert <br>
+Now when the loop will end fill thge elmenets of set into array and sort it and return it. <br>
+Time Complexity-O(nlogn+logn) <br>
+Space Complexity-O(k), k is the number of indices that meet upto target <br>
 
+__________________________________________________________________________________________________________
+
+## Question 19
 
 
