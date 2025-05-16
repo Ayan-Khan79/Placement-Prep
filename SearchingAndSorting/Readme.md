@@ -91,18 +91,18 @@ Space Complexity-O(1) <br>
 ______________________________________________________________________________________________________
 
 
-## 6. Question
-### Search array with adjacent diff at most k
-Given a step array arr[], its step value k, and a key x, we need to find the index of key x in the array arr[]. If multiple occurrences of key x exist, return the first occurrence of the key. In case of no occurrence of key x exists return -1.
-Note: A step array is an array of integers where the difference between adjacent elements is at most k. For example: arr[] = [4, 6, 7, 9] and k = 2 is a step array as the difference between the adjacent elements in the arr[] is at most 2.  
-Examples
-Input: arr[] = [4, 5, 6, 7, 6] , k = 1 , x = 6
-Output: 2
-Explanation: In an array arr 6 is present at index 2. So, return 2.
-Approach:-
-Simply just iterate over array and find x, if found return the index if not then return -1
-Time Complexity-O(n)
-Space Complexity- O(1)
+## 6. Question  <br>
+### Search array with adjacent diff at most k  <br>
+Given a step array arr[], its step value k, and a key x, we need to find the index of key x in the array arr[]. If multiple occurrences of key x exist, return the first occurrence of the key. In case of no occurrence of key x exists return -1.  <br>
+Note: A step array is an array of integers where the difference between adjacent elements is at most k. For example: arr[] = [4, 6, 7, 9] and k = 2 is a step array as the difference between the adjacent elements in the arr[] is at most 2.    <br>
+Examples  <br>
+Input: arr[] = [4, 5, 6, 7, 6] , k = 1 , x = 6  <br>
+Output: 2  <br>
+Explanation: In an array arr 6 is present at index 2. So, return 2.  <br>
+Approach:-  <br>
+Simply just iterate over array and find x, if found return the index if not then return -1  <br>
+Time Complexity-O(n)  <br>
+Space Complexity- O(1)  <br>
 
 ____________________________________________________________________________________________________________
 
