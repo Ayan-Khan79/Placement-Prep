@@ -66,4 +66,45 @@ Space Complexity-O(1) <br>
 
 _______________________________________________________________________________________________________
 
+## 5. Question <br>
+### Missing and Repeating <br>
+Given an unsorted array arr of positive integers. One number a from the set [1, 2,....,n] is missing and one number b occurs twice in the array. Find numbers a and b. <br>
+Note: The test cases are generated such that there always exists one missing and one repeating number within the range [1,n]. <br>
+Examples: <br>
+Input: arr[] = [2, 2] <br>
+Output: [2, 1] <br>
+Explanation: Repeating number is 2 and smallest positive missing number is 1. <br>
+Approach:- <br>
+1. Using Extra Space Hash Array <br>
+Create a Hash Array of size n+1 and initialize with 0 <br>
+Iterate over the array and increase the count of element in array in hashArry like hash[arr[i]]++ <br>
+Now iterate over the hashArray from 1 to n and check if particular index's value is 2 then it is repeated number and store and if particular index's value is 0 then it is missing number and store it <br>
+Time Complexity -O(n) <br>
+Space Complexity - O(n) , for Hash Array <br>
+2. Using Mathematics (Basic fromulas) <br>
+Note:- If we add all numbers in array s1 and all number upto n s1n, then we will observe that repated-missing = s1-s1n <br>
+Since we got erquations with two unknown variable we need another equation to find tha values of repeat and missing number, then we will calculate sum of squares of numbers in array s2 and same for  upto n numbers s2n that will create our second equation, and after solving both equations we will get our both the values. <br>
+Note:- Since addition and square can go out of bound of int limit , so use long long <br>
+Time Complexity-O(n), to find sum and squaresum of array <br>
+Space Complexity-O(1) <br>
+ 
+______________________________________________________________________________________________________
+
+
+## 6. Question
+### Search array with adjacent diff at most k
+Given a step array arr[], its step value k, and a key x, we need to find the index of key x in the array arr[]. If multiple occurrences of key x exist, return the first occurrence of the key. In case of no occurrence of key x exists return -1.
+Note: A step array is an array of integers where the difference between adjacent elements is at most k. For example: arr[] = [4, 6, 7, 9] and k = 2 is a step array as the difference between the adjacent elements in the arr[] is at most 2.  
+Examples
+Input: arr[] = [4, 5, 6, 7, 6] , k = 1 , x = 6
+Output: 2
+Explanation: In an array arr 6 is present at index 2. So, return 2.
+Approach:-
+Simply just iterate over array and find x, if found return the index if not then return -1
+Time Complexity-O(n)
+Space Complexity- O(1)
+
+____________________________________________________________________________________________________________
+
+
 
