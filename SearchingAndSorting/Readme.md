@@ -107,4 +107,20 @@ Space Complexity- O(1)  <br>
 ____________________________________________________________________________________________________________
 
 
+## 7. Question  <br>
+### Find Pair Given Difference  <br>
+Given an array, arr[] and an integer x, return true if there exists a pair of elements in the array whose absolute difference is x, otherwise, return false.  <br>
+Examples:  <br>
+Input: arr[] = [5, 20, 3, 2, 5, 80], x = 78  <br>
+Output: true  <br>
+Explanation: Pair (2, 80) have an absolute difference of 78.  <br>
+Approach:-  <br>
+Sort the Array and use two pointers approach, first pointer at starting of array and second pointer at the last of array  <br>
+check their diffrence if they are equal to x return true  <br>
+Else if the diff is greater than x reduce the last pointer towards 0   <br>
+Else if the diss is less than x then increase the first pointer towards n  <br>
+Keep checking this in while loop until pointers cross each other , if the diff doesnt exist then return false  <br>
+Time Complexity- o(nlogn)+O(n/2)  <br>
+Space Complexity-O(1)  <br>
 
+________________________________________________________________________________________________________
