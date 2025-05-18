@@ -124,3 +124,57 @@ Time Complexity- o(nlogn)+O(n/2)  <br>
 Space Complexity-O(1)  <br>
 
 ________________________________________________________________________________________________________
+
+
+## 8. Question <br>
+### 3 Sum <br>
+Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0. <br>
+Notice that the solution set must not contain duplicate triplets. <br>
+Example 1: <br>
+Input: nums = [-1,0,1,2,-1,-4] <br>
+Output: [[-1,-1,2],[-1,0,1]] <br>
+Explanation:  <br>
+nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0. <br>
+nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0. <br>
+nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0. <br>
+The distinct triplets are [-1,0,1] and [-1,-1,2]. <br>
+Notice that the order of the output and the order of the triplets does not matter. <br>
+Approach:- <br>
+1. Using Hashset <br>
+We will run two loops for i and j and will find third number in order to fulfill target <br>
+If it is found in the hashset then triplet is there and store it  <br>
+If not then store than number in hashset and keep moving the loop <br>
+Time Complexity-O(n^2) <br>
+Space Complexity-O(mlogm) for Hashset <br>
+2. Using three pointers <br>
+Sort the array <br>
+Fix one pointer at a time and vary two pointers, first from left end and second from right end to find the  triplet   <br>
+if found then store the triplet , since array is sorted then triplet will unique but we need to move forward pointers until that same number didnt appear <br>
+By moving all pointers until array is exhausted we will have our triplets <br>
+Time Complexit-O(n^2 + nlogn) <br>
+Space Complexity-O(1) <br>
+
+________________________________________________________________________________________________________
+
+## 9. Question <br>
+### 4 Sum <br>
+Given an array nums of n integers, return an array of all the unique quadruplets [nums[a], nums[b], nums[c], nums[d]] such that: <br>
+0 <= a, b, c, d < n <br>
+a, b, c, and d are distinct. <br>
+nums[a] + nums[b] + nums[c] + nums[d] == target <br>
+You may return the answer in any order. <br>
+Example 1: <br>
+Input: nums = [1,0,-1,0,-2,2], target = 0 <br>
+Output: [[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]] <br>
+Approach:- <br>
+1. Using Hashset <br>
+Same as 3 sum , just here we will increase one loop for k also and will perfom the same task  <br>
+Time Complexity-O(n^3) <br>
+Space Complexity-O(mlogm) , for the hashset <br>
+2. Using three pointers <br>
+Same as 3 sum , just here fix two pointers at starting and vary two pointers to find the quad <br>
+And if found just store it and keep on doing the same thing <br>
+Time Complexity-O(n^3) <br>
+Space Complexity-O(1) <br>
+
+_________________________________________________________________________________________________
