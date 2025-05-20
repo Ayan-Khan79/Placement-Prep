@@ -178,3 +178,41 @@ Time Complexity-O(n^3) <br>
 Space Complexity-O(1) <br>
 
 _________________________________________________________________________________________________
+
+## 10. Question <br>
+### Product of Array except itself <br>
+Given an array, arr[] construct a product array, res[] where each element in res[i] is the product of all elements in arr[] except arr[i]. Return this resultant array, res[]. <br>
+Note: Each element is res[] lies inside the 32-bit integer range. <br>
+Examples: <br>
+Input: arr[] = [10, 3, 5, 6, 2] <br>
+Output: [180, 600, 360, 300, 900] <br>
+Explanation: For i=0, res[i] = 3 * 5 * 6 * 2 is 180. <br>
+For i = 1, res[i] = 10 * 5 * 6 * 2 is 600. <br>
+For i = 2, res[i] = 10 * 3 * 6 * 2 is 360. <br>
+For i = 3, res[i] = 10 * 3 * 5 * 2 is 300. <br>
+For i = 4, res[i] = 10 * 3 * 5 * 6 is 900. <br>
+Approach:- <br>
+Using prefix and suffix product arrays <br>
+Create a resultant Array and fill it with prefix product <br>
+Now in the same array fill it with suffix product <br>
+Return the resultant Array <br>
+Time Compplexity-O(2n) <br>
+Space Complexity-O(n), for the resultant array <br>
+
+______________________________________________________________________________________________________________
+
+## 11. Question <br>
+### Arithmetric Number <br>
+Given three integers  'a' denotes the first term of an arithmetic sequence, 'c' denotes the common difference of an arithmetic sequence and an integer 'b'. you need to tell whether 'b' exists in the arithmetic sequence or not. <br>  Return 1 if b is present in the sequence. Otherwise, returns 0. <br>
+Examples: <br>
+Input: a = 1, b = 3, c = 2 <br>
+Output: true <br>
+Explaination: 3 is the second term of the sequence starting with 1 and having a common difference 2. <br>
+Approach:- <br>
+Run a loop starting from first number of sequnce till less than equal to number that has to be found with increamenting with common diffrence  <br>
+Check if i == that number return true <br>
+else return false <br>
+Time Complexity-O(b) <br>
+Space Complexity-O(1) <br>
+
+__________________________________________________________________________________________________________________
