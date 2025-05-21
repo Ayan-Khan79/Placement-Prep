@@ -382,6 +382,28 @@ Space Complexity-O(k), k is the number of indices that meet upto target <br>
 
 __________________________________________________________________________________________________________
 
-## Question 19
+## Question 19 <br>
+### Two sum -Pairs with 0 Sum <br>
+Given an integer array arr, return all the unique pairs [arr[i], arr[j]] such that i != j and arr[i] + arr[j] == 0. <br>
+Note: The pairs must be returned in sorted order, the solution array should also be sorted, and the answer must not contain any duplicate pairs. <br>
+Examples: <br>
+Input: arr = [-1, 0, 1, 2, -1, -4] <br>
+Output: [[-1, 1]] <br>
+Explanation: arr[0] + arr[2] = (-1)+ 1 = 0. <br>
+arr[2] + arr[4] = 1 + (-1) = 0. <br>
+The distinct pair are [-1,1]. <br>
+Approach:- <br>
+Create a set of vectors to store unique vectors and sort the Array <br>
+Now using two pointers check if arr[i] + arr[j] == sum , Then push the pair to a temporary vector and push the 
+vector to the set and increase the pointers i and j <br>
+And if sum >0  then decrease the j pointer  <br>
+And if sum<0 then increase the i pointer <br>
+Now store all vectors of the set to the vector of vector and return it <br>
+Time Complexity-O(nlogn) <br>
+Time Complexity-O(n), n will be the number of pairs in set <br>
+
+_________________________________________________________________________________________________________________
+
+
 
 
