@@ -45,4 +45,53 @@ Time Complexity-O(n), n is length of list <br>
 Space Complexity -O(1) <br>
 
 ___________________________________________________________________________________________________
+ 
+## 4. Question <br>
+### Detect loop in Linked List <br>
+You are given the head of a singly linked list. Your task is to determine if the linked list contains a loop. A loop exists in a linked list if the next pointer of the last node points to any other node in the list (including itself), rather than being null. <br>
+Custom Input format: <br>
+A head of a singly linked list and a pos (1-based index) which denotes the position of the node to which the last node points to. If pos = 0, it means the last node points to null, indicating there is no loop. <br>
+Examples: <br>
+Input: head: 1 -> 3 -> 4, pos = 2 <br>
+Output: true <br>
+Explanation: There exists a loop as last node is connected back to the second node. <br>
+Approach:- <br>
+Uisng slow and fast poineters <br>
+Se fast and slow pointers at head in starting and move fast by two positions and slow by one position and check if fast == slow , if that happens then there is a loop in the linked list and return true else return false <br>
+Time COmplexity-O(n) <br>
+Space Complexity-O(1) <br>
 
+_______________________________________________________________________________________________________
+
+## 5. Question <br>
+### Remove loop from Linked List <br>
+Given the head of a linked list that may contain a loop.  A loop means that the last node of the linked list is connected back to a node in the same list. The task is to remove the loop from the linked list (if it exists). <br>
+Examples: <br>
+Input: head = 1 -> 3 -> 4, pos = 2 <br>
+Output: true <br>
+Approach:-<br>
+Using fast and slow pointers <br>
+Make two pointers fast and slow at head and move fast by two positions and slow by one position and check if fast  == slow , then break from the loop<br>
+Now check wether the fast == NULL or fast->next == NULL, if that happens then there is no loop in the linked list and return from function<br>
+If not then find starting point of the loop by making slow at head and fast at starting point of the loop and move both pointers by one position till both pointers are not equal  <br>
+Now make a temporary pointer and point it to the next of the starting point of the loop and make it move till each reaches one step earlier than the starting point of the loop <br>
+Now make temp poiinter point to NULL and return from funnction <br>
+Time Complexity-O(n) <br>
+Space Complexity-O(1) <br>
+
+________________________________________________________________________________________________________
+
+## 6. Question  <br>
+### First Node of Loop  <br>
+Given a head of the singly linked list. If a loop is present in the list then return the first node of the loop else return NULL.  <br>
+Input:1->2->3->4->5 pos = 3  <br>
+Output: 3  <br>
+Explanation: We can see that there exists a loop in the given linked list and the first node of the loop is 3.  <br>
+Approach:-  <br>
+Using fast and slow pointers <br>
+Make two pointers fast and slow at head and move fast by two positions and slow by one position and check if fast  == slow , then break from the loop<br>
+Now check wether the fast == NULL or fast->next == NULL, if that happens then there is no loop in the linked list and return from function<br>
+If not then find starting point of the loop by making slow at head and fast at starting point of the loop and move both pointers by one position till both pointers are not equal  <br>
+Now return any pointer slow or fast
+Time Complexity-O(n) <br>
+Space Complexity-O(1) <br>
