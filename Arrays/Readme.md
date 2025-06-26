@@ -404,6 +404,84 @@ Time Complexity-O(n), n will be the number of pairs in set <br>
 
 _________________________________________________________________________________________________________________
 
+## Question 20 <br>
+### Smallest subarray with sum greater than x <br>
+Given a number x and an array of integers arr, find the smallest subarray with sum greater than the given value. If such a subarray do not exist return 0 in that case. <br>
+Examples: <br>
+Input: x = 51, arr[] = [1, 4, 45, 6, 0, 19] <br>
+Output: 3 <br>
+Explanation: Minimum length subarray is [4, 45, 6] <br>
+Input: x = 100, arr[] = [1, 10, 5, 2, 7] <br>
+Output: 0 <br>
+Explanation: No subarray exist <br>
+Approach:- <br>
+Using Sliding window approach first make the first window of sum of elements upto x and get its len now
+keep removing the elemnts from start of window till the window is >= x and also keep updating the len
+and keep performing till the last element of array. <br>
+Time complexity - O(n), n is the length of array <br>
+Space Complexity - O(1), no extra space is used <br>
+
+_______________________________________________________________________________________________________________
+
+## Question 21 <br>
+### Palindromic Array <br>
+Given an array arr[] of positive integers. Return true if all the array elements are palindrome otherwise, return false. <br>
+Examples: <br>
+Input: arr[] = [111, 222, 333, 444, 555] <br>
+Output: true <br>
+Explanation: <br>
+arr[0] = 111, which is a palindrome number. <br>
+arr[1] = 222, which is a palindrome number. <br>
+arr[2] = 333, which is a palindrome number. <br>
+arr[3] = 444, which is a palindrome number. <br>
+arr[4] = 555, which is a palindrome number. <br>
+As all numbers are palindrome so This will return true. <br>
+Approach:- <br>
+First convert each number into a string and check if its a palindrome <br>
+if all are paldinrome then return true, otherwise return false <br>
+Time Complexity - O(n*k), n is the length of array and k is the length of each string <br>
+Space Complexity - O(1), no extra space is being used (ignoring the temporary string conversion) <br>
+
+____________________________________________________________________________________________________________
+
+## Question 22 <br>
+### Array Subset <br>
+Given two arrays a[] and b[], your task is to determine whether b[] is a subset of a[]. <br>
+Examples: <br>
+Input: a[] = [11, 7, 1, 13, 21, 3, 7, 3], b[] = [11, 3, 7, 1, 7] <br>
+Output: true <br>
+Explanation: b[] is a subset of a[] <br>
+Input: a[] = [10, 5, 2, 23, 19], b[] = [19, 5, 3] <br>
+Output: false <br>
+Explanation: b[] is not a subset of a[] <br>
+Approach:- <br>
+Using maps store each arrays elements count to two maps both for array <br>
+And iterate on the b array check if its elemnts count is less than in its map to the a's map , then return false
+Else return true <br>
+Time Complexity - O(n+m), n is the size of a array and m is the size of b array <br>
+Space Complexity - O(n+m), n is the size of a array and m is the size of b array <br>
+
+______________________________________________________________________________________________________
+
+## Question 23 <br>
+### More than n/k Occurrences <br>
+Given an array arr and an element k. The task is to find the count of elements in the array that appear more than n/k times and n is length of arr. <br>
+Examples : <br>
+Input: arr = [3, 1, 2, 2, 1, 2, 3, 3], k = 4 <br>
+Output: 2 <br>
+Explanation: In the given array, 3 and 2 are the only elements that appears more than n/k times. <br>
+Input: arr = [2, 3, 3, 2], k = 3 <br>
+Output: 2 <br>
+Explanation: In the given array, 3 and 2 are the only elements that appears more than n/k times. So the count of elements are 2. <br>
+Approach:- <br>
+Using map store all elements count to a map <br>
+Now iterate over map check whose occurence is greate than n/k time , increase the counter by one <br>
+Return the counter <br>
+Time Complexity-O(n), n is the length of array <br>
+Space Complexity- O(k), k is the unique elements in array <br>
+______________________________________________________________________________________________________
+
+
 
 
 
