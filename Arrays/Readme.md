@@ -482,24 +482,24 @@ Space Complexity- O(k), k is the unique elements in array <br>
 ______________________________________________________________________________________________________
 
 ## Question 24 <br>
-### Count Inversions
-Given an array of integers arr[]. Find the Inversion Count in the array.
-Two elements arr[i] and arr[j] form an inversion if arr[i] > arr[j] and i < j.
-Inversion Count: For an array, inversion count indicates how far (or close) the array is from being sorted. If the array is already sorted then the inversion count is 0.
-If an array is sorted in the reverse order then the inversion count is the maximum. 
-Examples:
-Input: arr[] = [2, 4, 1, 3, 5]
-Output: 3
-Explanation: The sequence 2, 4, 1, 3, 5 has three inversions (2, 1), (4, 1), (4, 3).
-Approach:-
-1. Brute Force - Using two loops find all the pairs that satisfy the condition and keep the count and return it after looping.
-Time Complexity - O(n^2), n is the length of Array
-Space Complexity - O(1), no extra space is being used
-2. Using Merge Sort - While being merging in merge sort we can count the pairs as if we know any no greater than any number in second array then as it is already sorted at that point then all the element at the right of elemnt will also be greater than the element in second array 
-and count will increae as mid-low + 1
-This will count all the pairs and return the count;
-Time Complexity - O(nlogn), n is the length of Array
-Space Complexity - O(n), n is the length of Array
+### Count Inversions <br>
+Given an array of integers arr[]. Find the Inversion Count in the array. <br>
+Two elements arr[i] and arr[j] form an inversion if arr[i] > arr[j] and i < j. <br>
+Inversion Count: For an array, inversion count indicates how far (or close) the array is from being sorted. If the array is already sorted then the inversion count is 0. <br>
+If an array is sorted in the reverse order then the inversion count is the maximum.  <br>
+Examples: <br>
+Input: arr[] = [2, 4, 1, 3, 5] <br>
+Output: 3 <br>
+Explanation: The sequence 2, 4, 1, 3, 5 has three inversions (2, 1), (4, 1), (4, 3). <br>
+Approach:- <br>
+1. Brute Force - Using two loops find all the pairs that satisfy the condition and keep the count and return it after looping. <br>
+Time Complexity - O(n^2), n is the length of Array <br>
+Space Complexity - O(1), no extra space is being used <br>
+2. Using Merge Sort - While being merging in merge sort we can count the pairs as if we know any no greater than any number in second array then as it is already sorted at that point then all the element at the right of elemnt will also be greater than the element in second array  <br>
+and count will increae as mid-low + 1 <br>
+This will count all the pairs and return the count <br>
+Time Complexity - O(nlogn), n is the length of Array <br>
+Space Complexity - O(n), n is the length of Array <br>
 
 _________________________________________________________________________________________________________________
 
